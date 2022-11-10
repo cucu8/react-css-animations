@@ -1,0 +1,57 @@
+.keyframe-div {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+
+  /* keyframe çalışması icin animation-name ve kaç saniyede çalışmasını istiyorsak animation-duration vermeliyiz  bu background ,    background-color: chartreuse; rengini aldıktan sonra geri orjinal rengine geri döner*/
+  animation-name: yapilacakAnimasyonAdi;
+  animation-duration: 8s;
+
+  /* keyfaremin sayfa yüklendikten sonra bu işlemi kaç kere tekrar etmesini istiyorsak, animation-iteration-count değerine kaç verirsek o kadar tekrar edecektir. sonsuz bir şekilde devam etmesini istiyorsak  animation-iteration-count: infinitie; verebiliriz.*/
+  /* animation-iteration-count: 2; */
+  /* animation-iteration-count: infinite; */
+
+  /* Bu işlemi tersten yaptırmak istersek animation-direction kullanabiliriz. */
+  /* animation-direction: reverse; */
+
+  /* Bu işlemi bir düz - bir ters yaptırmak istersek animation-direction kullanabiliriz. */
+  /* animation-direction: alternate; */
+
+  /* animasyonun sn halinde kalmasını istiyorsak animation-fill-mode kullanmalıyız */
+  animation-fill-mode: forwards;
+}
+
+/* yapılacak lan animasyonu keyrfames ile tanımlamalıyız */
+
+/* yapılacak işlemi from-to olarak verebiliriz */
+
+/* @keyframes yapilacakAnimasyonAdi {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: chartreuse;
+  }
+} */
+
+/* yapılacak işlemi yüzdelik dilimlere bölmek istersek; */
+
+@keyframes yapilacakAnimasyonAdi {
+  0% {
+    background-color: aqua;
+    left: 10px;
+  }
+  25% {
+    background-color: blue;
+    left: 140px;
+  }
+  50% {
+    background-color: yellow;
+    left: 270px;
+  }
+  100% {
+    background-color: chocolate;
+    left: 390px;
+  }
+}

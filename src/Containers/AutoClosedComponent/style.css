@@ -1,0 +1,65 @@
+.container {
+  width: 400px;
+  background-color: red;
+  height: 200px;
+
+  /* saat yönünde 200 derece döndürür, saat yönünün tersine vermek istersek -180deg */
+  /* transform: rotate(180deg); */
+
+  /* TRANSITION */
+
+  /* ilgili html elemanındaki değişiklikleri kaç sn. de ve hangi css propertysine etki etmesini istediğimiz yere bunu koyarız.  */
+  /* tek propertye etki etmesini istersek; */
+  transition: width 2s;
+  /* birden fazla  propertye etki etmesini istersek; */
+  transition: width 2s, height 2s, opacity 2s, transform 2s;
+  opacity: 0;
+
+  /* Transition çeşidini belirler */
+  /* transition-timing-function:ease; */
+
+  /* transition gecikmesi */
+
+  /* transition-delay: 2sn; */
+}
+.container:hover {
+  /* 2 BOYUTLU DÖNÜŞÜMLER */
+
+  /* hover yapıldıgında; x ekseninde:100px, y ekseninde:100px hareket edecek  */
+  /* transform: translate(100px, 100px); */
+
+  /* saat yönünde 200 derece döndürür saat yönünün tersine vermek istersek -180deg*/
+  /* transform: rotate(20deg); */
+
+  /* scale özelliği ise normal boyutundan kaç katı fazla yada az olmasını istersek onu belirtiriz.  */
+  /* transform: scale(3, 3); */
+  /* transform: scale(0.5, 0.5);*/
+
+  /* kare bir elemanın yatay dörtgen yapmak icin kullanırız */
+  /* transform: skewX(50deg); */
+  /* transform: skewY(50deg); */
+
+  /* Bunların hepsini ortak bir yapıda kullanmak istersek matrix propertisini kullanabiliriz, sırası ile istediğimiz değerleri verebiliriz.*/
+  /* transform: matrix(scaleX(), skewY(), skewX(), translateX(),translateY(),  ); */
+
+  /* 3 BOYUTLU DÖNÜŞÜMLER */
+
+  /* X ekseninde verdğimiz dereceye göre değişim gösterir, 90 dereceyi geçtiği anda ayna etkisi yaparak tersini yapar. 180 derecede ise tam bir ayna etkisi yapar */
+  /* transform: rotateX(180deg); */
+
+  /* Y ekseninde verdğimiz dereceye göre değişim gösterir, 90 dereceyi geçtiği anda ayna etkisi yaparak tersini yapar. 180 derecede ise tam bir ayna etkisi yapar */
+  /* transform: rotateY(50deg); */
+
+  /* aynı işlemi z eknsenindede yapabiliriz. */
+  /* transform: rotateZ(90deg); */
+
+  /* TRANSITION */
+
+  /* ilgili html elemanındaki değişiklikleri kaç sn. de ve hangi css propertysine etki etmesini istediğimiz yere bunu koyarız.  */
+  /* width: 800px; */
+  /* height: 400px; */
+  /* tek propertye etki etmesini istersek; */
+
+  /* birden fazla  propertye etki etmesini istersek; */
+  /* opacity: 0; */
+}
